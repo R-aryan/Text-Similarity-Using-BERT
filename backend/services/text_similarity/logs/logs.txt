@@ -1,0 +1,9 @@
+[12-Sep-2021 : 01:25:18] INFO [werkzeug._log:113]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+[12-Sep-2021 : 01:25:40] INFO [root.info:27] INFO : GET request received:http://localhost:8080/
+[12-Sep-2021 : 01:25:40] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:40] "[37mGET / HTTP/1.1[0m" 200 -
+[12-Sep-2021 : 01:25:40] INFO [root.info:27] INFO : GET request received:http://localhost:8080/favicon.ico
+[12-Sep-2021 : 01:25:40] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[12-Sep-2021 : 01:25:52] INFO [root.info:27] INFO : GET request received:http://localhost:8080/text_similarity/api/v1/
+[12-Sep-2021 : 01:25:52] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:52] "[33mGET /text_similarity/api/v1/ HTTP/1.1[0m" 404 -
+[12-Sep-2021 : 01:25:59] INFO [root.info:27] INFO : GET request received:http://localhost:8080/text_similarity/api/v1/predict
+[12-Sep-2021 : 01:25:59] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:59] "[37mGET /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -

@@ -1,6 +1,7 @@
 import os
 
 import torch
+from transformers import AutoTokenizer
 
 
 class Settings:
@@ -9,3 +10,6 @@ class Settings:
     APPLICATION_PATH = root_path + "backend\\services\\text_similarity\\application\\"
     # setting up logs path
     LOGS_DIRECTORY = root_path + "backend\\services\\text_similarity\\logs\\logs.txt"
+
+    checkpoint = "bert-base-uncased"
+    tokenizer = AutoTokenizer.from_pretrained(checkpoint)
