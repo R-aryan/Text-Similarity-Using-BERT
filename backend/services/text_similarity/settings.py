@@ -13,3 +13,9 @@ class Settings:
 
     checkpoint = "bert-base-uncased"
     tokenizer = AutoTokenizer.from_pretrained(checkpoint)
+
+    # training data directory
+    TRAIN_DATA = APPLICATION_PATH + "ai\\data\\train.csv"
+
+    # test data directory
+    TEST_DATA = APPLICATION_PATH + "ai\\data\\test.csv"
