@@ -19,3 +19,5 @@ class Settings:
 
     # test data directory
     TEST_DATA = APPLICATION_PATH + "ai\\data\\test.csv"
+
+    DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
