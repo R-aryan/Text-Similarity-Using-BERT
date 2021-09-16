@@ -21,3 +21,11 @@ class Settings:
     TEST_DATA = APPLICATION_PATH + "ai\\data\\test.csv"
 
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    # labels
+    possible_labels = {'not_duplicate': 0, 'duplicate': 1}
+    # number of labels
+    num_labels = 1
+    # dropout
+    dropout = 0.3
+    input_dim = 768
