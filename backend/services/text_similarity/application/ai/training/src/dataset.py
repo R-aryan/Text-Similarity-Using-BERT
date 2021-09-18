@@ -1,3 +1,5 @@
+import torch
+
 from services.text_similarity.settings import Settings
 
 
@@ -17,4 +19,23 @@ class BERTDataset:
         s2 = self.sentence_2[item]
         target = self.targets[item]
 
+        inputs = self.settings.tokenizer.encode_plus(
+            s1, s2,
+            add_special_tokens=True,
+            max_length=self.settings.max_len,
+            pad_to_max_length=True,
+            return_attention_mask=True,
+            truncation=True
+        )
+
+        ids = inputs["input_ids"]
+        mask = inputs["attention_mask"]
+        token_type_ids = inputs["token_type_ids"]
+
+        return {
+            'input_ids': torch.tensor(ids),
+            'attention_mask': torch.tensor(mask),
+            'token_type_ids': torch.tensor(token_type_ids),
+            'targets': torch.tensor(target)
+        }
 
