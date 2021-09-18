@@ -13,4 +13,8 @@ class BERTDataset:
         return len(self.sentence_1)
 
     def __getitem__(self, item):
-        pass
+        s1 = self.sentence_1[item]
+        s2 = self.sentence_2[item]
+        target = self.targets[item]
+
+
