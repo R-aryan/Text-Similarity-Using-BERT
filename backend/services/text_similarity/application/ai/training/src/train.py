@@ -1,5 +1,7 @@
 import pandas as pd
 from sklearn import model_selection
+from transformers import AdamW, get_linear_schedule_with_warmup
+from torch.utils.data import DataLoader
 
 from services.text_similarity.application.ai.model import BERTClassifier
 from services.text_similarity.application.ai.training.src import utils
@@ -7,9 +9,6 @@ from services.text_similarity.application.ai.training.src.dataset import BERTDat
 from services.text_similarity.application.ai.training.src.engine import Engine
 from services.text_similarity.application.ai.training.src.preprocess import Preprocess
 from services.text_similarity.settings import Settings
-
-from transformers import AdamW, get_linear_schedule_with_warmup
-from torch.utils.data import DataLoader
 
 
 class Train:
@@ -91,13 +90,15 @@ class Train:
         self.train_data_loader = self.__create_data_loaders(sentence1=df_train.question1.values,
                                                             sentence2=df_train.question2.values,
                                                             targets=df_train.is_duplicate.values,
-                                                            num_workers=self.settings.TRAIN_NUM_WORKERS)
+                                                            num_workers=self.settings.TRAIN_NUM_WORKERS,
+                                                            batch_size=self.settings.TRAIN_BATCH_SIZE)
 
         # validation data loader
         self.val_data_loader = self.__create_data_loaders(sentence1=df_valid.question1.values,
                                                           sentence2=df_valid.question2.values,
                                                           targets=df_valid.is_duplicate.values,
-                                                          num_workers=self.settings.VAL_NUM_WORKERS)
+                                                          num_workers=self.settings.VAL_NUM_WORKERS,
+                                                          batch_size=self.settings.VALID_BATCH_SIZE)
 
         self.total_steps = int(len(df_train) / self.settings.TRAIN_BATCH_SIZE * self.settings.EPOCHS)
 

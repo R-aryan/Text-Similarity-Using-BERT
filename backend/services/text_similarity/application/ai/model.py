@@ -1,5 +1,5 @@
-from torch import nn
-from transformers import AutoModel
+import torch.nn as nn
+from transformers import BertModel, AutoModel
 
 from services.text_similarity.settings import Settings
 
@@ -8,7 +8,7 @@ class BERTClassifier(nn.Module):
     def __init__(self, freeze_params=False):
         super(BERTClassifier, self).__init__()
         self.settings = Settings
-        self.bert = AutoModel.from_pretrained(self.settings.checkpoint)
+        self.bert = BertModel.from_pretrained(self.settings.checkpoint, return_dict=False)
 
         if not freeze_params:
             # freeze all the parameters
