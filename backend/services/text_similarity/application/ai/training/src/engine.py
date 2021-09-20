@@ -21,7 +21,6 @@ class Engine:
         torch.manual_seed(seed_value)
         torch.cuda.manual_seed_all(seed_value)
 
-
     def train_fn(self, data_loader, model, optimizer, device, schedular):
         print("Starting training...\n")
         # Reset the total loss for this epoch.
@@ -33,11 +32,13 @@ class Engine:
             b_input_ids = data['input_ids']
             b_attn_mask = data['attention_mask']
             b_labels = data['targets']
+            b_token_type_ids = data['token_type_ids']
 
             # moving tensors to device
             b_input_ids = b_input_ids.to(device)
             b_attn_mask = b_attn_mask.to(device)
             b_labels = b_labels.to(device)
+            b_token_type_ids = b_token_type_ids.to(device)
 
             # optimizer.zero_grad()
 
@@ -47,7 +48,11 @@ class Engine:
             # (source: https://stackoverflow.com/questions/48001598/why-do-we-need-to-call-zero-grad-in-pytorch)
             model.zero_grad()
 
-            logits = model(b_input_ids, b_attn_mask)
+            logits = model(
+                ids=b_input_ids,
+                mask=b_attn_mask,
+                token_type_ids=b_token_type_ids
+            )
 
             loss = self.loss_fn(logits, b_labels.float())
             batch_loss += loss.item()
@@ -69,7 +74,7 @@ class Engine:
             # Update the learning rate
             schedular.step()
 
-            if step % 200 == 0 and not step == 0:
+            if step % 500 == 0 and not step == 0:
                 # Calculate elapsed time in minutes.
                 elapsed = self.format_time(time.time() - t0_epoch)
                 # Report progress.
@@ -93,4 +98,3 @@ class Engine:
 
         # Format as hh:mm:ss
         return str(datetime.timedelta(seconds=elapsed_rounded))
-

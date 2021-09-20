@@ -8,11 +8,11 @@ class BERTClassifier(nn.Module):
     def __init__(self, freeze_params=False):
         super(BERTClassifier, self).__init__()
         self.settings = Settings
-        self.model = AutoModel.from_pretrained(self.settings.checkpoint)
+        self.bert = AutoModel.from_pretrained(self.settings.checkpoint)
 
         if not freeze_params:
             # freeze all the parameters
-            for param in self.model.parameters():
+            for param in self.bert.parameters():
                 param.requires_grad = False
 
         self.bert_drop = nn.Dropout(self.settings.dropout)
