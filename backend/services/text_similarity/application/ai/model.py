@@ -1,11 +1,11 @@
 from torch import nn
-from transformers import  AutoModel
+from transformers import AutoModel
 
 from services.text_similarity.settings import Settings
 
 
 class BERTClassifier(nn.Module):
-    def __init__(self,freeze_params = False):
+    def __init__(self, freeze_params=False):
         super(BERTClassifier, self).__init__()
         self.settings = Settings
         self.model = AutoModel.from_pretrained(self.settings.checkpoint)
