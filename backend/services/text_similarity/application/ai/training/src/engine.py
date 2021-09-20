@@ -26,7 +26,7 @@ class Engine:
             y_pred = y_pred.sigmoid()
         return ((y_pred > thresh) == y_true.byte()).float().mean().item()
 
-    def train_fn(self, data_loader, model, optimizer, device, schedular):
+    def train_fn(self, data_loader, model, optimizer, device, scheduler):
         print("Starting training...\n")
         # Reset the total loss for this epoch.
         total_loss, batch_loss, batch_counts = 0, 0, 0
@@ -77,7 +77,7 @@ class Engine:
             # modified based on their gradients, the learning rate, etc
             optimizer.step()
             # Update the learning rate
-            schedular.step()
+            scheduler.step()
 
             if step % 500 == 0 and not step == 0:
                 # Calculate elapsed time in minutes.

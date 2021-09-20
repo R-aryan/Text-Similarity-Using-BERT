@@ -30,8 +30,6 @@ class Train:
         self.total_steps = None
         self.param_optimizer = None
         self.optimizer_parameters = None
-        self.total_steps = None
-        self.model_config = None
 
     def __initialize(self):
         # Instantiate Bert Classifier
@@ -103,6 +101,42 @@ class Train:
 
         self.total_steps = int(len(df_train) / self.settings.TRAIN_BATCH_SIZE * self.settings.EPOCHS)
 
-    def train(self):
-        pass
+    def __train(self):
+        for epochs in range(self.settings.EPOCHS):
+            self.engine.train_fn(data_loader=self.train_data_loader,
+                                 model=self.bert_text_model,
+                                 optimizer=self.optimizer,
+                                 device=self.settings.DEVICE,
+                                 scheduler=self.scheduler)
 
+            val_loss, val_accuracy = self.engine.eval_fn(data_loader=self.val_data_loader,
+                                                         model=self.bert_text_model,
+                                                         device=self.settings.DEVICE)
+
+            print(f"Validation accuracy = {val_accuracy}")
+
+            self.early_stopping(epoch_score=val_accuracy,
+                                model=self.bert_text_model,
+                                model_path=self.settings.WEIGHTS_PATH)
+
+            if self.early_stopping.early_stop:
+                print("Early stopping")
+                break
+
+    def run(self):
+        try:
+            print("Loading and Preparing the Dataset-----!! ")
+            self.__load_data(csv_data_path=self.settings.TRAIN_DATA)
+            print("Dataset Successfully Loaded and Prepared-----!! ")
+            print()
+            print("Loading and Initializing the Bert Model -----!! ")
+            self.__initialize()
+            print("Model Successfully Loaded and Initialized-----!! ")
+            print()
+            print("------------------Starting Training-----------!!")
+            self.engine.set_seed()
+            self.__train()
+            print("Training complete-----!!!")
+
+        except BaseException as ex:
+            print("Following Exception Occurred---!! ", str(ex))

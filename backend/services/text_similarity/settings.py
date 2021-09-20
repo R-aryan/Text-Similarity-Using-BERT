@@ -38,7 +38,8 @@ class Settings:
     seed_value = 42
     test_size = 0.2
 
-    # batch size
+    # weights path
+    WEIGHTS_PATH = APPLICATION_PATH + "ai\\weights\\weights\\text_similarity_model.bin"
     TRAIN_BATCH_SIZE = 32
     VALID_BATCH_SIZE = 16
     EPOCHS = 10
@@ -47,4 +48,5 @@ class Settings:
     VAL_NUM_WORKERS = 2
     patience = 4
     mode = "max"
+
 
