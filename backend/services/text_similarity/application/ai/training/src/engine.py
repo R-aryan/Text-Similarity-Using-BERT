@@ -128,9 +128,9 @@ class Engine:
         return val_loss, val_accuracy
 
     def format_time(self, elapsed):
-        '''
+        """
         Takes a time in seconds and returns a string hh:mm:ss
-        '''
+        """
         # Round to the nearest second.
         elapsed_rounded = int(round(elapsed))
 
