@@ -32,3 +32,14 @@ class Settings:
 
     # max length for embeddings
     max_len = 256
+
+    # bert no decay layers
+    no_decay = ["bias", "LayerNorm.bias", "LayerNorm.weight"]
+    seed_value = 42
+    test_size = 0.2
+
+    # batch size
+    TRAIN_BATCH_SIZE = 32
+    VALID_BATCH_SIZE = 16
+    EPOCHS = 10
+    RANDOM_STATE = 42
