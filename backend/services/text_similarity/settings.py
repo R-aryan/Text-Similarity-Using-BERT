@@ -25,10 +25,11 @@ class Settings:
     # labels
     possible_labels = {'not_duplicate': 0, 'duplicate': 1}
     # number of labels
-    num_labels = 1
+    output_dim = 1
     # dropout
     dropout = 0.3
     input_dim = 768
+    hidden_dim = 56
 
     # max length for embeddings
     max_len = 256

@@ -1,5 +1,5 @@
 import torch.nn as nn
-from transformers import BertModel, AutoModel
+from transformers import BertModel
 
 from services.text_similarity.settings import Settings
 
@@ -10,13 +10,20 @@ class BERTClassifier(nn.Module):
         self.settings = Settings
         self.bert = BertModel.from_pretrained(self.settings.checkpoint, return_dict=False)
 
+        # adding custom layers according to the problem statement
+        # self.classifier = nn.Sequential(
+        #     nn.Linear(self.settings.input_dim, self.settings.hidden_dim),
+        #     nn.ReLU(),
+        #     nn.Linear(self.settings.hidden_dim, self.settings.output_dim)
+        # )
+
         if not freeze_params:
             # freeze all the parameters
             for param in self.bert.parameters():
                 param.requires_grad = False
 
         self.bert_drop = nn.Dropout(self.settings.dropout)
-        self.out = nn.Linear(self.settings.input_dim, self.settings.num_labels)
+        self.out = nn.Linear(self.settings.input_dim, self.settings.output_dim)
 
     def forward(self, ids, mask, token_type_ids):
         o1, o2 = self.bert(
