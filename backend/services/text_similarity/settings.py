@@ -49,5 +49,6 @@ class Settings:
     VAL_NUM_WORKERS = 2
     patience = 4
     mode = "max"
+    TARGETS_DEFAULT_KEY = -1
 
 
