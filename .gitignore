@@ -115,3 +115,7 @@ dmypy.json
 .idea/
 
 *.bin
+
+*.csv
+
+*.ipynb
