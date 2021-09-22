@@ -43,3 +43,51 @@
 [22-Sep-2021 : 21:01:36] INFO [root.info:27] INFO : Running Inference----!!
 [22-Sep-2021 : 21:01:41] INFO [root.info:27] INFO : Performing prediction on the given data.
 [22-Sep-2021 : 21:02:19] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 21:10:56] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 21:11:01] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 21:11:01] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 21:11:03] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 21:11:17] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'If a male rub his penis on up pussy can she get pregnant?', 'sentence_2': 'Can psychopath get pregnant if his penis touched my underwear?'}
+[22-Sep-2021 : 21:11:17] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 21:11:17] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 21:11:18] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 21:13:02] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 21:13:06] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 21:13:06] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 21:13:08] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 21:13:19] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}
+[22-Sep-2021 : 21:13:19] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 21:13:19] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 21:13:20] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 21:14:55] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 21:15:00] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 21:15:00] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 21:15:01] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 21:15:13] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[22-Sep-2021 : 21:15:13] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 21:15:13] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 21:15:15] INFO [root.info:27] INFO : Performing mapping and returning response.
+[23-Sep-2021 : 00:06:18] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:06:23] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:06:23] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:06:24] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:06:37] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[23-Sep-2021 : 00:06:37] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:06:37] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:07:07] INFO [root.info:27] INFO : Performing mapping and returning response.
+[23-Sep-2021 : 00:07:48] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:07:53] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:07:53] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:07:55] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:08:04] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[23-Sep-2021 : 00:08:04] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:08:04] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:08:05] INFO [root.info:27] INFO : Performing mapping and returning response.
+[23-Sep-2021 : 00:16:03] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:16:08] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:16:08] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:16:09] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:16:18] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[23-Sep-2021 : 00:16:18] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:16:18] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:16:19] INFO [root.info:27] INFO : prediction Successful.: Response {'inference_data': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}, 'response': 'duplicate', 'inference time in sec': 0.968, 'device': device(type='cpu')}

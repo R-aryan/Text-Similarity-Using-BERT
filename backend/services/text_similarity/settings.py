@@ -50,4 +50,4 @@ class Settings:
     patience = 4
     mode = "max"
     TARGETS_DEFAULT_KEY = -1
-    threshold = 0.6
+    threshold = 0.5

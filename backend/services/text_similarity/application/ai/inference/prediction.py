@@ -1,4 +1,5 @@
-import numpy as np
+import time
+
 import torch
 from injector import inject
 
@@ -58,6 +59,7 @@ class PredictionManager:
                 b_input_ids = b_input_ids.to(self.settings.DEVICE, dtype=torch.long).unsqueeze(0)
                 b_attn_mask = b_attn_mask.to(self.settings.DEVICE, dtype=torch.long).unsqueeze(0)
                 b_token_type_ids = b_token_type_ids.to(self.settings.DEVICE, dtype=torch.long).unsqueeze(0)
+                start_time = time.time()
 
                 outputs = self.__model(
                     ids=b_input_ids,
@@ -67,7 +69,9 @@ class PredictionManager:
 
                 result = torch.sigmoid(outputs).cpu().detach().numpy()
 
-                return result[0]
+                inference_time = round((time.time() - start_time), 3)
+
+                return result[0], inference_time
 
         except BaseException as ex:
             self.logger.error(message="Exception Occurred while prediction---!! " + str(ex))
@@ -78,16 +82,26 @@ class PredictionManager:
 
         return result
 
+    def __format_response(self, data, result, duration):
+        return {
+            'input': data,
+            'response': result,
+            'inference time in sec': duration,
+            'device': self.settings.DEVICE
+        }
+
     def run_inference(self, data):
         try:
             self.logger.info(message="Data for inference received---!!  " + str(data))
             self.logger.info(message="Running Inference----!!")
-            output = self.__predict(data)
-            self.logger.info(message="Performing mapping and returning response.")
-            return self.__map_response(output)
+            output, prediction_time = self.__predict(data)
+            result = self.__map_response(output)
+            inference_data = self.__format_response(data=data,
+                                                    result=result,
+                                                    duration=prediction_time)
+            self.logger.info(message="prediction Successful.: Response " + str(inference_data))
+            return inference_data
 
         except BaseException as ex:
             self.logger.error(message="Exception Occurred while running inference---!! " + str(ex))
-
-
-
+            return "Exception Occurred while running inference---!! " + str(ex)
