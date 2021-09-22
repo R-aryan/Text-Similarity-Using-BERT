@@ -91,3 +91,45 @@
 [23-Sep-2021 : 00:16:18] INFO [root.info:27] INFO : Running Inference----!!
 [23-Sep-2021 : 00:16:18] INFO [root.info:27] INFO : Performing prediction on the given data.
 [23-Sep-2021 : 00:16:19] INFO [root.info:27] INFO : prediction Successful.: Response {'inference_data': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}, 'response': 'duplicate', 'inference time in sec': 0.968, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:24:34] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:24:39] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:24:39] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:24:41] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:24:51] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}
+[23-Sep-2021 : 00:24:51] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:24:51] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:24:53] INFO [root.info:27] INFO : prediction Successful.: Response {'input': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}, 'response': 'not_duplicate', 'inference time in sec': 1.279, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:25:18] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:25:23] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:25:23] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:25:24] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:25:24] INFO [werkzeug._log:113]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+[23-Sep-2021 : 00:25:32] INFO [root.info:27] INFO : GET request received:http://localhost:8080/text_similarity/api/v1/predict
+[23-Sep-2021 : 00:25:32] INFO [werkzeug._log:113] 127.0.0.1 - - [23/Sep/2021 00:25:32] "[37mGET /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -
+[23-Sep-2021 : 00:25:58] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:26:02] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:26:02] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:26:03] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:26:12] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}
+[23-Sep-2021 : 00:26:12] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:26:12] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:26:21] INFO [root.info:27] INFO : prediction Successful.: Response {'input': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}, 'response': 'not_duplicate', 'inference time in sec': 9.033, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:28:17] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:28:22] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:28:22] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:28:24] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:28:24] INFO [werkzeug._log:113]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+[23-Sep-2021 : 00:29:05] INFO [root.info:27] INFO : POST request received:http://localhost:8080/text_similarity/api/v1/predict
+[23-Sep-2021 : 00:29:05] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}
+[23-Sep-2021 : 00:29:05] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:29:05] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:29:06] INFO [root.info:27] INFO : prediction Successful.: Response {'input': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}, 'response': 'not_duplicate', 'inference time in sec': 1.307, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:29:06] INFO [root.info:27] INFO : Request processed successfully--!!
+[23-Sep-2021 : 00:29:06] INFO [werkzeug._log:113] 127.0.0.1 - - [23/Sep/2021 00:29:06] "[37mPOST /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -
+[23-Sep-2021 : 00:31:32] INFO [root.info:27] INFO : POST request received:http://localhost:8080/text_similarity/api/v1/predict
+[23-Sep-2021 : 00:31:32] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[23-Sep-2021 : 00:31:32] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:31:32] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:31:33] INFO [root.info:27] INFO : prediction Successful.: Response {'input': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}, 'response': 'duplicate', 'inference time in sec': 1.27, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:31:33] INFO [root.info:27] INFO : Request processed successfully--!!
+[23-Sep-2021 : 00:31:33] INFO [werkzeug._log:113] 127.0.0.1 - - [23/Sep/2021 00:31:33] "[37mPOST /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -
