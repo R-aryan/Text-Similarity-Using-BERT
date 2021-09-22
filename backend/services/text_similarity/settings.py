@@ -23,7 +23,7 @@ class Settings:
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # labels
-    possible_labels = {'not_duplicate': 0, 'duplicate': 1}
+    possible_labels = {0: 'not_duplicate', 1: 'duplicate'}
     # number of labels
     output_dim = 1
     # dropout
@@ -40,7 +40,7 @@ class Settings:
     test_size = 0.2
 
     # weights path
-    WEIGHTS_PATH = APPLICATION_PATH + "ai\\weights\\weights\\text_similarity_model.bin"
+    WEIGHTS_PATH = APPLICATION_PATH + "ai\\weights\\text_similarity_model.bin"
     TRAIN_BATCH_SIZE = 32
     VALID_BATCH_SIZE = 16
     EPOCHS = 10
@@ -50,5 +50,4 @@ class Settings:
     patience = 4
     mode = "max"
     TARGETS_DEFAULT_KEY = -1
-
-
+    threshold = 0.6

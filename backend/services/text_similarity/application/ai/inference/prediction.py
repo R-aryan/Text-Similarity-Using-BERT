@@ -73,15 +73,21 @@ class PredictionManager:
             self.logger.error(message="Exception Occurred while prediction---!! " + str(ex))
 
     def __map_response(self, output):
-        label = np.argmax(output, axis=1)
+        label = 1 if output[0] > self.settings.threshold else 0
         result = self.settings.possible_labels[label]
 
-    def run_inference(self, data):
-        print("Running Inference---!! \n")
-        self.logger.info(message="Data for inference received---!!")
-        self.logger.info(message="Running Inference----!!")
-        output = self.__predict(data)
-        self.logger.info(message="Performing mapping and returning response.")
-        # print(output)
+        return result
 
-        return self.__map_response(output)
+    def run_inference(self, data):
+        try:
+            self.logger.info(message="Data for inference received---!!  " + str(data))
+            self.logger.info(message="Running Inference----!!")
+            output = self.__predict(data)
+            self.logger.info(message="Performing mapping and returning response.")
+            return self.__map_response(output)
+
+        except BaseException as ex:
+            self.logger.error(message="Exception Occurred while running inference---!! " + str(ex))
+
+
+

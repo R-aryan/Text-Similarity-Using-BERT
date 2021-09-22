@@ -7,3 +7,39 @@
 [12-Sep-2021 : 01:25:52] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:52] "[33mGET /text_similarity/api/v1/ HTTP/1.1[0m" 404 -
 [12-Sep-2021 : 01:25:59] INFO [root.info:27] INFO : GET request received:http://localhost:8080/text_similarity/api/v1/predict
 [12-Sep-2021 : 01:25:59] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:59] "[37mGET /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -
+[22-Sep-2021 : 20:43:05] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 20:43:10] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 20:43:10] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 20:43:10] ERROR [root.error:35] ERROR : Exception Occurred while loading model---!! [Errno 2] No such file or directory: 'C:\\Users\\rites\\Documents\\GitHub\\Text-Similarity-Using-BERT\\backend\\services\\text_similarity\\application\\ai\\weights\\weights\\text_similarity_model.bin'
+[22-Sep-2021 : 20:44:16] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 20:44:22] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 20:44:23] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 20:44:38] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 20:45:28] INFO [root.info:27] INFO : Data for inference received---!!
+[22-Sep-2021 : 20:45:29] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 20:45:36] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 20:46:47] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 20:48:01] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 20:48:06] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 20:48:06] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 20:48:08] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 20:48:39] INFO [root.info:27] INFO : Data for inference received---!!
+[22-Sep-2021 : 20:48:40] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 20:48:57] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 20:50:15] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 20:57:54] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 20:58:01] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 20:58:01] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 20:58:03] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 20:58:22] INFO [root.info:27] INFO : Data for inference received---!!
+[22-Sep-2021 : 20:58:22] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 20:58:27] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 20:59:24] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 21:00:52] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 21:00:57] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 21:00:57] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 21:00:58] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 21:01:35] INFO [root.info:27] INFO : Data for inference received---!!
+[22-Sep-2021 : 21:01:36] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 21:01:41] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 21:02:19] INFO [root.info:27] INFO : Performing mapping and returning response.

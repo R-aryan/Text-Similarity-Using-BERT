@@ -7,10 +7,12 @@ from tqdm import tqdm
 import time
 import datetime
 
+from services.text_similarity.settings import Settings
+
 
 class Engine:
     def __init__(self):
-        pass
+        self.settings = Settings
 
     def loss_fn(self, outputs, targets):
         return nn.BCEWithLogitsLoss()(outputs, targets.view(-1, 1))
@@ -120,7 +122,9 @@ class Engine:
                 )
                 loss = self.loss_fn(logits, b_labels.float())
                 val_loss.append(loss.item())
-                accuracy = self.accuracy_threshold(logits.view(-1, 1), b_labels.view(-1, 1))
+                accuracy = self.accuracy_threshold(y_pred=logits.view(-1, 1),
+                                                   y_true=b_labels.view(-1, 1),
+                                                   thresh=self.settings.threshold)
                 val_accuracy.append(accuracy)
 
         val_loss = np.mean(val_loss)
