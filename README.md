@@ -16,3 +16,19 @@
 ### Goal
 
 The goal of this competition is to predict which of the provided pairs of questions contain two questions with the same meaning.
+
+
+### Following are the screenshots for the sample **request** and sample **response.**
+
+- Request sample
+
+![Sample request](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/develop/msc/sample_request.png)
+  <br>
+  <br>
+- Response Sample
+
+![Sample response](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/develop/msc/sample_response.png)
+<br>
+<br>
+
+![sample request and response](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/develop/msc/sample_request_response.png)
