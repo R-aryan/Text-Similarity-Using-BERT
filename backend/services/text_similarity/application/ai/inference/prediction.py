@@ -49,17 +49,16 @@ class PredictionManager:
             )
 
             with torch.no_grad():
+                start_time = time.time()
                 data = test_dataset[0]
                 b_input_ids = data['input_ids']
                 b_attn_mask = data['attention_mask']
-                b_labels = data['targets']
                 b_token_type_ids = data['token_type_ids']
 
                 # moving tensors to device
                 b_input_ids = b_input_ids.to(self.settings.DEVICE, dtype=torch.long).unsqueeze(0)
                 b_attn_mask = b_attn_mask.to(self.settings.DEVICE, dtype=torch.long).unsqueeze(0)
                 b_token_type_ids = b_token_type_ids.to(self.settings.DEVICE, dtype=torch.long).unsqueeze(0)
-                start_time = time.time()
 
                 outputs = self.__model(
                     ids=b_input_ids,
