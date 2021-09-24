@@ -23,7 +23,7 @@
 
 
 ### For Prediction/Inference
-- Download the pre-trained weights(file is Zipped) from [here](https://drive.google.com/drive/folders/1l0oejWlLIEYDOsjahVNMN31JgNeFIzfl?usp=sharing) and place it inside the weights' folder(**backend/services/text_similarity/application/ai/weights/**) after unzipping it.
+- Download the pre-trained weights(file is Zipped) from [here](https://drive.google.com/drive/folders/1CwlhY4BkhyU6vAtFnM_W75cSvTsJC4n-?usp=sharing) and place it inside the weights' folder(**backend/services/text_similarity/application/ai/weights/**) after unzipping it.
 - After setting up the environment: go to [**backend/services/text_similarity/api**](https://github.com/R-aryan/Text-Similarity-Using-BERT/tree/develop/backend/services/text_similarity/api) and run **app.py**.
 - After running the above step the server will start(Endpoint- **localhost:8080**).  
 - You can send the **POST/GET** request at this URL - **localhost:8080/text_similarity/api/v1/predict** (you can find the declaration of endpoint under [**backend/services/text_similarity/api/__init__.py**](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/develop/backend/services/text_similarity/api/__init__.py) )
