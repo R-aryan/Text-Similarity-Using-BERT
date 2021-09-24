@@ -1,0 +1,147 @@
+[12-Sep-2021 : 01:25:18] INFO [werkzeug._log:113]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+[12-Sep-2021 : 01:25:40] INFO [root.info:27] INFO : GET request received:http://localhost:8080/
+[12-Sep-2021 : 01:25:40] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:40] "[37mGET / HTTP/1.1[0m" 200 -
+[12-Sep-2021 : 01:25:40] INFO [root.info:27] INFO : GET request received:http://localhost:8080/favicon.ico
+[12-Sep-2021 : 01:25:40] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[12-Sep-2021 : 01:25:52] INFO [root.info:27] INFO : GET request received:http://localhost:8080/text_similarity/api/v1/
+[12-Sep-2021 : 01:25:52] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:52] "[33mGET /text_similarity/api/v1/ HTTP/1.1[0m" 404 -
+[12-Sep-2021 : 01:25:59] INFO [root.info:27] INFO : GET request received:http://localhost:8080/text_similarity/api/v1/predict
+[12-Sep-2021 : 01:25:59] INFO [werkzeug._log:113] 127.0.0.1 - - [12/Sep/2021 01:25:59] "[37mGET /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -
+[22-Sep-2021 : 20:43:05] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 20:43:10] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 20:43:10] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 20:43:10] ERROR [root.error:35] ERROR : Exception Occurred while loading model---!! [Errno 2] No such file or directory: 'C:\\Users\\rites\\Documents\\GitHub\\Text-Similarity-Using-BERT\\backend\\services\\text_similarity\\application\\ai\\weights\\weights\\text_similarity_model.bin'
+[22-Sep-2021 : 20:44:16] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 20:44:22] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 20:44:23] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 20:44:38] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 20:45:28] INFO [root.info:27] INFO : Data for inference received---!!
+[22-Sep-2021 : 20:45:29] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 20:45:36] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 20:46:47] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 20:48:01] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 20:48:06] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 20:48:06] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 20:48:08] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 20:48:39] INFO [root.info:27] INFO : Data for inference received---!!
+[22-Sep-2021 : 20:48:40] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 20:48:57] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 20:50:15] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 20:57:54] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 20:58:01] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 20:58:01] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 20:58:03] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 20:58:22] INFO [root.info:27] INFO : Data for inference received---!!
+[22-Sep-2021 : 20:58:22] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 20:58:27] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 20:59:24] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 21:00:52] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 21:00:57] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 21:00:57] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 21:00:58] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 21:01:35] INFO [root.info:27] INFO : Data for inference received---!!
+[22-Sep-2021 : 21:01:36] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 21:01:41] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 21:02:19] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 21:10:56] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 21:11:01] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 21:11:01] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 21:11:03] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 21:11:17] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'If a male rub his penis on up pussy can she get pregnant?', 'sentence_2': 'Can psychopath get pregnant if his penis touched my underwear?'}
+[22-Sep-2021 : 21:11:17] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 21:11:17] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 21:11:18] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 21:13:02] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 21:13:06] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 21:13:06] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 21:13:08] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 21:13:19] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}
+[22-Sep-2021 : 21:13:19] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 21:13:19] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 21:13:20] INFO [root.info:27] INFO : Performing mapping and returning response.
+[22-Sep-2021 : 21:14:55] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[22-Sep-2021 : 21:15:00] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[22-Sep-2021 : 21:15:00] INFO [root.info:27] INFO : Loading Model trained Weights.
+[22-Sep-2021 : 21:15:01] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[22-Sep-2021 : 21:15:13] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[22-Sep-2021 : 21:15:13] INFO [root.info:27] INFO : Running Inference----!!
+[22-Sep-2021 : 21:15:13] INFO [root.info:27] INFO : Performing prediction on the given data.
+[22-Sep-2021 : 21:15:15] INFO [root.info:27] INFO : Performing mapping and returning response.
+[23-Sep-2021 : 00:06:18] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:06:23] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:06:23] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:06:24] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:06:37] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[23-Sep-2021 : 00:06:37] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:06:37] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:07:07] INFO [root.info:27] INFO : Performing mapping and returning response.
+[23-Sep-2021 : 00:07:48] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:07:53] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:07:53] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:07:55] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:08:04] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[23-Sep-2021 : 00:08:04] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:08:04] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:08:05] INFO [root.info:27] INFO : Performing mapping and returning response.
+[23-Sep-2021 : 00:16:03] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:16:08] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:16:08] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:16:09] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:16:18] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[23-Sep-2021 : 00:16:18] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:16:18] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:16:19] INFO [root.info:27] INFO : prediction Successful.: Response {'inference_data': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}, 'response': 'duplicate', 'inference time in sec': 0.968, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:24:34] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:24:39] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:24:39] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:24:41] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:24:51] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}
+[23-Sep-2021 : 00:24:51] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:24:51] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:24:53] INFO [root.info:27] INFO : prediction Successful.: Response {'input': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}, 'response': 'not_duplicate', 'inference time in sec': 1.279, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:25:18] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:25:23] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:25:23] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:25:24] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:25:24] INFO [werkzeug._log:113]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+[23-Sep-2021 : 00:25:32] INFO [root.info:27] INFO : GET request received:http://localhost:8080/text_similarity/api/v1/predict
+[23-Sep-2021 : 00:25:32] INFO [werkzeug._log:113] 127.0.0.1 - - [23/Sep/2021 00:25:32] "[37mGET /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -
+[23-Sep-2021 : 00:25:58] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:26:02] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:26:02] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:26:03] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:26:12] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}
+[23-Sep-2021 : 00:26:12] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:26:12] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:26:21] INFO [root.info:27] INFO : prediction Successful.: Response {'input': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}, 'response': 'not_duplicate', 'inference time in sec': 9.033, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:28:17] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 00:28:22] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 00:28:22] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 00:28:24] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 00:28:24] INFO [werkzeug._log:113]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+[23-Sep-2021 : 00:29:05] INFO [root.info:27] INFO : POST request received:http://localhost:8080/text_similarity/api/v1/predict
+[23-Sep-2021 : 00:29:05] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}
+[23-Sep-2021 : 00:29:05] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:29:05] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:29:06] INFO [root.info:27] INFO : prediction Successful.: Response {'input': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'I admire I am considering of buying insurance from them'}, 'response': 'not_duplicate', 'inference time in sec': 1.307, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:29:06] INFO [root.info:27] INFO : Request processed successfully--!!
+[23-Sep-2021 : 00:29:06] INFO [werkzeug._log:113] 127.0.0.1 - - [23/Sep/2021 00:29:06] "[37mPOST /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -
+[23-Sep-2021 : 00:31:32] INFO [root.info:27] INFO : POST request received:http://localhost:8080/text_similarity/api/v1/predict
+[23-Sep-2021 : 00:31:32] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[23-Sep-2021 : 00:31:32] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 00:31:32] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 00:31:33] INFO [root.info:27] INFO : prediction Successful.: Response {'input': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}, 'response': 'duplicate', 'inference time in sec': 1.27, 'device': device(type='cpu')}
+[23-Sep-2021 : 00:31:33] INFO [root.info:27] INFO : Request processed successfully--!!
+[23-Sep-2021 : 00:31:33] INFO [werkzeug._log:113] 127.0.0.1 - - [23/Sep/2021 00:31:33] "[37mPOST /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -
+[23-Sep-2021 : 19:24:39] INFO [root.info:27] INFO : Loading Bert Base Uncased Model.
+[23-Sep-2021 : 19:24:46] INFO [root.info:27] INFO : Bert Base Model Successfully Loaded.
+[23-Sep-2021 : 19:24:46] INFO [root.info:27] INFO : Loading Model trained Weights.
+[23-Sep-2021 : 19:24:49] INFO [root.info:27] INFO : Model Weights loaded Successfully--!!
+[23-Sep-2021 : 19:24:49] INFO [werkzeug._log:113]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+[23-Sep-2021 : 19:24:59] INFO [root.info:27] INFO : POST request received:http://localhost:8080/text_similarity/api/v1/predict
+[23-Sep-2021 : 19:24:59] INFO [root.info:27] INFO : Data for inference received---!!  {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}
+[23-Sep-2021 : 19:24:59] INFO [root.info:27] INFO : Running Inference----!!
+[23-Sep-2021 : 19:24:59] INFO [root.info:27] INFO : Performing prediction on the given data.
+[23-Sep-2021 : 19:25:00] INFO [root.info:27] INFO : prediction Successful.: Response {'input': {'sentence_1': 'How are the two wheeler insurance from Bharti Axa insurance?', 'sentence_2': 'How are the two wheeler insurance from Bharti Axa insurance?'}, 'response': 'duplicate', 'inference time in sec': 1.415, 'device': device(type='cpu')}
+[23-Sep-2021 : 19:25:00] INFO [root.info:27] INFO : Request processed successfully--!!
+[23-Sep-2021 : 19:25:00] INFO [werkzeug._log:113] 127.0.0.1 - - [23/Sep/2021 19:25:00] "[37mPOST /text_similarity/api/v1/predict HTTP/1.1[0m" 200 -
