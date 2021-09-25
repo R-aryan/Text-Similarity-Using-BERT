@@ -3,7 +3,7 @@
 - The Kaggle dataset can be found Here [Click Here](https://www.kaggle.com/c/quora-question-pairs/data)
 
 
-####  Steps to run the project [Click Here](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/develop/backend/services/text_similarity/README.md)
+####  Steps to run the project [Click Here](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/main/backend/services/text_similarity/README.md)
 
 ### Dataset Description
 
