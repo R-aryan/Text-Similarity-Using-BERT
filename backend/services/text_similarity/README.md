@@ -36,13 +36,13 @@
 
 - Request sample
 
-![Sample request](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/main/msc/sample_request.png)
+![Sample request](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/develop/msc/sample_request.png)
   <br>
   <br>
 - Response Sample
 
-![Sample response](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/main/msc/sample_response.png)
+![Sample response](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/develop/msc/sample_response.png)
 <br>
 <br>
 
-![sample request and response](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/main/msc/sample_request_response.png)
+![sample request and response](https://github.com/R-aryan/Text-Similarity-Using-BERT/blob/develop/msc/sample_request_response.png)
